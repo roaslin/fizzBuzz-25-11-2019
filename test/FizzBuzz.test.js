@@ -13,4 +13,12 @@ describe('FizzBuzz Should', () => {
     const fizzBuzz = new FizzBuzz()
     expect(fizzBuzz.play(3)).toBe("Fizz")
   })
+  it('return 4 as String when play 4 as number', () => {
+    const fizzBuzz = new FizzBuzz()
+    expect(fizzBuzz.play(4)).toBe("4")
+  })
+  it('return Buzz when number is divisible by 5', () => {
+    const fizzBuzz = new FizzBuzz()
+    expect(fizzBuzz.play(5)).toBe("Buzz")
+  })
 })

@@ -1,12 +1,12 @@
 export default class FizzBuzz {
-    play(number){
-        if(number == 3){
+    play(number) {
+        if (number % 5 == 0) {
+            return "Buzz";
+        }
+        
+        if (number % 3 == 0) {
             return "Fizz";
         }
-
-        if(number == 2){
-            return "2";
-        }
-        return "1";
+        return number.toString();
     }
 }
