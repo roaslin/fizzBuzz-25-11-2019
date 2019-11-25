@@ -9,4 +9,8 @@ describe('FizzBuzz Should', () => {
     const fizzBuzz = new FizzBuzz()
     expect(fizzBuzz.play(2)).toBe("2")
   })
+  it('return Fizz when number is divisible by 3', () => {
+    const fizzBuzz = new FizzBuzz()
+    expect(fizzBuzz.play(3)).toBe("Fizz")
+  })
 })
