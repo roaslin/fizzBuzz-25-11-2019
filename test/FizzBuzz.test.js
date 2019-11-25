@@ -21,4 +21,8 @@ describe('FizzBuzz Should', () => {
     const fizzBuzz = new FizzBuzz()
     expect(fizzBuzz.play(5)).toBe("Buzz")
   })
+  it('return FizzBuzz when number is divisible by both 5 & 3', () => {
+    const fizzBuzz = new FizzBuzz()
+    expect(fizzBuzz.play(15)).toBe("FizzBuzz")
+  })
 })
